@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/about-section",
+      "handler": "about-section.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/about-section",
+      "handler": "about-section.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/about-section",
+      "handler": "about-section.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

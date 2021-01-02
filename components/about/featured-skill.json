@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_about_featured_skills",
+  "info": {
+    "name": "Featured Skill",
+    "icon": "boxes",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "shortDescription": {
+      "type": "string",
+      "required": true,
+      "maxLength": 70
+    }
+  }
+}

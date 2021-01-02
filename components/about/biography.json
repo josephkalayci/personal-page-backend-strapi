@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_about_biographies",
+  "info": {
+    "name": "Biography",
+    "icon": "feather-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "biography": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

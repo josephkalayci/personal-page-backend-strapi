@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_sections",
+  "info": {
+    "name": "About Section",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "biography": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about.biography",
+      "required": true
+    },
+    "skills": {
+      "unique": true,
+      "collection": "skills"
+    },
+    "profileImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

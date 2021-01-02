@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "name": "Project",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "galery": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "subheading": {
+      "type": "string"
+    },
+    "techs": {
+      "unique": true,
+      "collection": "skills"
+    },
+    "githubURL": {
+      "type": "string"
+    },
+    "youtubeURL": {
+      "type": "string"
+    },
+    "liveURL": {
+      "type": "string"
+    }
+  }
+}

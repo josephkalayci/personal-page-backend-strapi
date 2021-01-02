@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_infos",
+  "info": {
+    "name": "Contact Info",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "email": {
+      "type": "email"
+    },
+    "youtubeURL": {
+      "type": "string"
+    },
+    "githubURL": {
+      "type": "string"
+    },
+    "linkedInURL": {
+      "type": "string"
+    }
+  }
+}

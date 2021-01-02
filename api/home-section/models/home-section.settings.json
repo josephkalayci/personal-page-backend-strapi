@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_sections",
+  "info": {
+    "name": "Home Section"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "hero": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "heading": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
