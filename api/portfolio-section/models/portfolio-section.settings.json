@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "portfolio_sections",
+  "info": {
+    "name": "Portfolio Section",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "projects": {
+      "unique": true,
+      "collection": "project"
+    }
+  }
+}
